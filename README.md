@@ -1,5 +1,3 @@
-# geocoding
-#geocoding_addresses
 import numpy as np
 import time
 import random
