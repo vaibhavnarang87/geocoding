@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 import requests
 from bs4 import BeautifulSoup
 import json
-conn = create_engine('mssql+pymssql://vnarang:%F;=!4hMpGMkpwYm/u7H@HEALTHSQL2:1433/HCS').connect()
+conn = create_engine('mssql+pymssql://username:Password@HEALTHSQL2:1433/HCS').connect()
 #Get data
 SQL= r"SELECT convert(date,eclrs_create_date) as opened_date,address FROM [HCS].[dbo].[CC_Data] where patient_type = 'confirmed' and address is not null order by convert(date,eclrs_create_date) desc"
 #Run query
